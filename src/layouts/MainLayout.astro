@@ -1,0 +1,40 @@
+---
+import '@fontsource/poppins/100.css'
+import '@fontsource/poppins/200.css'
+import '@fontsource/poppins/300.css'
+import '@fontsource/poppins/400.css'
+import '@fontsource/poppins/500.css'
+import '@fontsource/poppins/600.css'
+import '@fontsource/poppins/700.css'
+import '@fontsource/poppins/800.css'
+import '@fontsource/poppins/900.css'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>dimfu</title>
+  </head>
+  <body>
+    <div class="h-screen flex min-h-screen w-full flex-col bg-cod-gray-700 text-silver">
+      <div class="max-w-3xl flex flex-col gap-4 px-4 py-4 md:px-8 md:py-8 md:text-xl font-extralight h-full mx-auto justify-center">
+        <slot />
+      </div>
+    </div>
+  </body>
+
+  <style is:global>
+    html {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    li:not(:last-child):after {
+      content: ' \00b7';
+      display: inline-flex;
+      margin: 0 1rem;
+    }
+  </style>
+</html>
