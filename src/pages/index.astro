@@ -3,15 +3,42 @@ import MainLayout from '@/layouts/MainLayout.astro'
 ---
 
 <MainLayout>
+  <div>
+    <p class="text-3xl font-bold text-silver-600">Mufid Arkanu</p>
+    <p class="text-base font-light text-silver-800">Software Engineer, Bali ID</p>
+  </div>
+
 	<div>
-		<p class="text-3xl font-bold text-silver-600">Mufid Arkanu</p>
-		<p class="text-base font-light text-silver-800">Software Engineer, Bali ID</p>
+		<h4 class="mb-2 text-sm font-semibold text-silver-800">Selected Projects</h4>
+
+		<ul>
+			<li class="">
+				<a href="https://trailbrake.vercel.app/" target="_blank" class="text-lg font-medium transition-colors text-silver-600 hover:text-silver-900 hover:underline underline-offset-4 hover:decoration-wavy">trailbrake</a>
+				<p class="text-base font-extralight text-silver-700">
+					Motorsport discovery service to search upcoming events
+				</p>
+			</li>
+		</ul>
 	</div>
-	<p class="text-base font-extralight text-silver-700">
-		Reach me out at <a class="font-normal underline hover:decoration-wavy underline-offset-4 text-silver-700 hover:text-silver-900" href="mailto:dimmfu@gmail.com">dimfu@gmail.com</a>, you can view my
-		code
-		<a class="font-normal underline hover:decoration-wavy underline-offset-4 text-silver-700 hover:text-silver-900" href="https://github.com/dimfu" target="_blank">@dimfu</a> on Github.
-	</p>
-	
-	<a class="text-xs w-fit font-normal hover:underline hover:decoration-wavy underline-offset-4 text-silver-900 hover:text-silver-900" href="https://github.com/dimfu/www" target="_blank">View source</a>
+
+	<div>
+		<h4 class="mb-2 text-sm font-semibold text-silver-800">Contact</h4>
+		<p class="text-base font-extralight text-silver-700">
+			Reach me out at <a
+      class="font-normal underline hover:decoration-wavy underline-offset-4 text-silver-700 hover:text-silver-900"
+      href="mailto:dimmfu@gmail.com">dimmfu@gmail.com</a
+			>, you can view my code
+			<a
+      class="font-normal underline hover:decoration-wavy underline-offset-4 text-silver-700 hover:text-silver-900"
+      href="https://github.com/dimfu"
+      target="_blank">@dimfu</a
+			> on Github.
+		</p>
+	</div>
+
+  <a
+    class="text-xs w-fit font-normal hover:underline hover:decoration-wavy underline-offset-4 text-silver-900 hover:text-silver-900"
+    href="https://github.com/dimfu/www"
+    target="_blank">View source</a
+  >
 </MainLayout>
