@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "C:/Users/askduifhaxz/Documents/js/portfolio",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
