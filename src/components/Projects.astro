@@ -1,38 +1,16 @@
 ---
+import { Projects as _Projects} from "@/content/projects";
 import ProjectItem from "./ProjectItem.astro";
-
-const FEATURED_PROJECTS = ["KBT-leaderboard", "recipe-scraper"];
-
-const GITHUB_URL = "https://api.github.com/users/dimfu/repos";
-const request = await fetch(GITHUB_URL);
-const response: Record<string, any> = await request.json();
-
-const fitleredProjects: Record<string, any> = [];
-response.filter((repo: Record<string, any>) => {
-   FEATURED_PROJECTS.forEach((project) => {
-      if (repo.name == project) {
-         fitleredProjects.push(repo);
-      }
-   });
-});
 ---
 
 <ul class="flex flex-col gap-3">
    {
-      fitleredProjects.map(
-         ({
-            name,
-            description,
-            html_url,
-         }: {
-            name: string;
-            description: string;
-            html_url: string;
-         }) => (
+      _Projects.map(
+         ({ name, description,url,}) => (
             <ProjectItem
                title={name}
                description={description}
-               href={html_url}
+               href={url}
             />
          ),
       )
