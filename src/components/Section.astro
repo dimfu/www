@@ -1,0 +1,12 @@
+---
+interface Props {
+    delay: string
+}
+const { delay } = Astro.props
+---
+<section 
+  class="opacity-0 animate-intro" 
+  style={`animation-delay: ${delay}`}
+>
+    <slot/>
+</section>

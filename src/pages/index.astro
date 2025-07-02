@@ -1,44 +1,31 @@
 ---
-import Projects from "@/components/Projects.astro";
-import MainLayout from "@/layouts/MainLayout.astro";
+import Projects from "@/components/Projects.astro"
+import MainLayout from "@/layouts/MainLayout.astro"
+import Section from "@/components/Section.astro"
 ---
 
 <MainLayout>
-	<div class="opacity-0 animate-intro [animation-delay:0.35s]">
-		<p class="text-4xl font-bold text-silver-600 mb-3">dimfu</p>
-		<p class="text-base font-light text-silver-500 mb-2">
-			Hello! I'm Mufid, a software engineer based in Bali, Indonesia.
-		</p>
-		<p class="text-base font-light text-silver-500">
-			I use TypeScript, Golang and Next.js on a daily basis and love them. My work typically revolves around website development and other areas that interest me.
-		</p>
-	</div>
+	<Section delay="0.35s">
+		<h1>dimfu</h1>
+		<p>Hello! I'm Mufid, a software engineer based in Bali, Indonesia.</p>
+		<p>I use TypeScript, Golang and Next.js on a daily basis and love them. My work typically revolves around website development and other areas that interest me.</p>
+	</Section>
 
-	<div class="opacity-0 animate-intro [animation-delay:0.4s]"> 
-		<h4 class="mb-2 text-sm font-semibold text-silver-800">
-			Projects
-		</h4>
+	<Section delay="0.40s">
+		<h4>Projects</h4>
 		<Projects />
-	</div>
+	</Section>
 
-	<div class="opacity-0 animate-intro [animation-delay:0.45s]">
-		<h4 class="mb-2 text-sm font-semibold text-silver-800">Contact</h4>
-		<p class="text-base font-extralight text-silver-700">
-			Reach me out at <a
-				class="font-normal underline hover:decoration-wavy underline-offset-4 text-silver-700 hover:text-silver-900"
-				href="mailto:contact@dimfu.my.id">contact@dimfu.my.id</a
-			>, you can view my code
-			<a
-				class="font-normal underline hover:decoration-wavy underline-offset-4 text-silver-700 hover:text-silver-900"
-				href="https://github.com/dimfu"
-				target="_blank">@dimfu</a
-			> on Github.
+	<Section delay="0.45s">
+		<h4>Contact</h4>
+		<p>
+			Reach me out at <a href="mailto:contact@dimfu.my.id">contact@dimfu.my.id</a>, you can view my code
+			<a href="https://github.com/dimfu" target="_blank">@dimfu</a> on Github.
 		</p>
-	</div>
-
-	<a
-		class="opacity-0 animate-intro text-xs w-fit font-normal hover:underline hover:decoration-wavy underline-offset-4 text-silver-900 hover:text-silver-900 [animation-delay:0.5s]"
-		href="https://github.com/dimfu/www"
-		target="_blank">View source</a
-	>
+	</Section>
+	<Section delay="0.50s">
+		<a class="hide-underline" href="https://github.com/dimfu/www" target="_blank">
+			<small>View Source</small>
+		</a>
+	</Section>
 </MainLayout>

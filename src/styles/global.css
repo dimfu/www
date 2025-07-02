@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cod-gray-50: #444444;
+  --color-cod-gray-100: #3F3F3F;
+  --color-cod-gray-200: #353535;
+  --color-cod-gray-300: #2A2A2A;
+  --color-cod-gray-400: #202020;
+  --color-cod-gray-500: #161616;
+  --color-cod-gray-600: #131313;
+  --color-cod-gray-700: #111111;
+  --color-cod-gray-800: #0E0E0E;
+  --color-cod-gray-900: #0C0C0C;
+  --color-cod-gray: #161616; 
+
+  --color-silver-50: #EEEEEE;
+  --color-silver-100: #E9E9E9;
+  --color-silver-200: #DFDFDF;
+  --color-silver-300: #D4D4D4;
+  --color-silver-400: #CACACA;
+  --color-silver-500: #C0C0C0;
+  --color-silver-600: #A4A4A4;
+  --color-silver-700: #888888;
+  --color-silver-800: #6C6C6C;
+  --color-silver-900: #505050;
+  --color-silver: #C0C0C0; 
+
+  --animate-intro: intro 0.3s forwards ease-in-out;
+}
+
+@keyframes intro {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+html {
+      font-family: 'Poppins', sans-serif;
+}
+
+body {
+	@apply flex w-full flex-col bg-cod-gray-700 text-silver;
+}
+
+main {
+	@apply max-w-lg flex flex-col px-4 py-4 md:px-8 md:py-8 md:text-xl font-extralight h-full;
+}
+
+h1 {
+	@apply text-silver-600 text-4xl font-bold mb-3;
+}
+
+h2, h3, h4, h5, strong {
+	@apply text-silver-800 font-semibold mt-4 text-sm;
+}
+
+small {
+	@apply font-normal text-silver-900 text-xs;
+}
+
+p {
+	@apply text-base font-light text-silver-500 my-2;
+}
+
+a {
+	@apply font-medium underline transition-colors text-silver-700 hover:text-silver-900 hover:underline underline-offset-4 hover:decoration-wavy w-fit;
+}
+
+.hide-underline {
+	@apply text-silver-900  no-underline;
+}
+
+.project > p {
+	@apply text-base font-extralight text-silver-700 my-0;
+}
+
+.project > a {
+	@apply no-underline hover:underline;
+}
